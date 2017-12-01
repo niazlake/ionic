@@ -17,7 +17,7 @@ var IonicSnapshot = function(options) {
     self.appId = options.appId || 'test_app';
     self.build = (browser.params.dev === 'true') ? 'Development' : 'Production';
     self.sleepBetweenSpecs = self.build === 'Development' ? 3000 : (options.sleepBetweenSpecs || 500);
-    self.testId = browser.params.test_id || 'test_id';
+    self.testId = 'v3-master';
     self.shouldUpload = browser.params.upload !== 'false';
     self.platformId = browser.params.platform_id;
     self.platformIndex = browser.params.platform_index;

@@ -1,7 +1,7 @@
 
 exports.config = {
 
-  groupId: 'ionic2',
+  groupId: 'ionic-core',
 
   appId: 'snapshots',
 
