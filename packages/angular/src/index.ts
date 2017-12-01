@@ -1,6 +1,31 @@
-export { IonNavDelegate } from './directives/ion-nav';
-export { IonicAngularModule } from './module';
-export { AlertController, AlertProxy } from './providers/alert-controller';
-export { App } from './providers/app';
-export { NavController } from './providers/nav-controller';
+import { Directive, ElementRef, NgModule } from '@angular/core';
 
+
+@Directive({
+  selector: 'ion-checkbox'
+})
+export class BooleanInput {
+
+  constructor(element: ElementRef) {
+    console.log('BooleanInput', element);
+  }
+
+}
+
+
+@NgModule({
+  declarations: [
+    BooleanInput
+  ],
+  exports: [
+    BooleanInput
+  ],
+  providers: [
+
+  ]
+})
+export class IonicModule {
+  constructor() {
+    console.log('IonicModule');
+  }
+}

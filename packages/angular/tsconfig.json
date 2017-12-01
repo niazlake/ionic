@@ -5,18 +5,18 @@
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "lib": ["dom", "es2015"],
     "module": "es2015",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "outDir": "dist",
+    "outDir": "demo/node_modules/@ionic/angular/dist",
     "removeComments": false,
     "sourceMap": true,
     "target": "es2015"
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "compileOnSave": false,
-  "buildOnSave": false
+  "files": [
+    "src/index.ts"
+  ]
 }

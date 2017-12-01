@@ -5,9 +5,11 @@ import { BasicInputsPageComponent } from './basic-inputs-page.component';
 
 import { SharedModule } from '../shared/shared.module';
 import { BasicInputsPageRoutingModule } from './basic-inputs-page-routing.module';
+import { IonicModule } from '@ionic/angular';
+
 
 @NgModule({
-  imports: [CommonModule, FormsModule, BasicInputsPageRoutingModule, SharedModule],
+  imports: [IonicModule, CommonModule, FormsModule, BasicInputsPageRoutingModule, SharedModule],
   declarations: [BasicInputsPageComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { AlertController } from '@ionic/angular';
+// import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-alert-page',
@@ -21,38 +21,38 @@ import { AlertController } from '@ionic/angular';
 })
 export class AlertPageComponent {
 
-  constructor(private alertController: AlertController) {
+  constructor() {
 
   }
 
   clickMe() {
-    const alert = this.alertController.create({
-      title: 'ohhhh snap',
-      message: 'Ive been injected via Angular keeping the old api',
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'Cancel',
-          handler: () => {
-            // console.log('cancel');
-          }
-        },
-        {
-          text: 'Okay',
-          role: 'Okay',
-          handler: () => {
-            // console.log('okay');
-          }
-        }
-      ]
+    // const alert = this.alertController.create({
+    //   title: 'ohhhh snap',
+    //   message: 'Ive been injected via Angular keeping the old api',
+    //   buttons: [
+    //     {
+    //       text: 'Cancel',
+    //       role: 'Cancel',
+    //       handler: () => {
+    //         // console.log('cancel');
+    //       }
+    //     },
+    //     {
+    //       text: 'Okay',
+    //       role: 'Okay',
+    //       handler: () => {
+    //         // console.log('okay');
+    //       }
+    //     }
+    //   ]
 
-    });
-    alert.present().then(() => {
-      return alert.dismiss();
+    // });
+    // alert.present().then(() => {
+    //   return alert.dismiss();
 
-    }).then(() => {
-      console.log('dismissed');
-    });
+    // }).then(() => {
+    //   console.log('dismissed');
+    // });
   }
 
 }
